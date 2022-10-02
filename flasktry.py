@@ -9,11 +9,12 @@ import urllib.request
 from geopy.geocoders import Nominatim
 import turtle
 
-app = Flask(__name__)
-@app.route("/")
+
 
 def index():
    
+    app = Flask(__name__)
+    @app.route("/")
     issimage = Image.open("iss.gif")
     fig = plt.figure(figsize=(7,6))
     while(True):
